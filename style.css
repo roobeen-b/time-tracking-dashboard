@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@100;200&family=Lexend+Deca&family=Luxurious+Roman&family=Open+Sans&family=Raleway:wght@400;700&family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  color: white;
+}
+
+.wrapper {
+  background-color: #0f1424;
+  padding: 80px 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.main {
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  padding: 0;
+}
+.main .personal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: #5847eb;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+.main .personal h3 {
+  font-weight: 100;
+  color: whitesmoke;
+}
+.main .personal h2 {
+  font-weight: 100;
+}
+.main .personal img {
+  width: 20%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.main ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.main ul a {
+  text-decoration: none;
+  color: #6f76c8;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.card img {
+  background-repeat: no-repeat;
+  width: 80px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  right: 20px;
+}
+.card .inner-card {
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 30px;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+}
+.card .inner-card .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card .inner-card .left .activity {
+  font-size: 1.2rem;
+}
+.card .inner-card .left .time {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.card .inner-card .right {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+  color: #6f76c8;
+}
+.card .inner-card .right img {
+  width: 20px;
+  position: static;
+}
+
+.work {
+  background-color: #ff8c66;
+}
+
+.play {
+  background-color: #56c2e6;
+}
+
+.study {
+  background-color: #ff5c7c;
+}
+
+.exercise {
+  background-color: #4acf81;
+}
+
+.social {
+  background-color: #7536d3;
+}
+
+.self-care {
+  background-color: #f1c65b;
+}
+
+/*# sourceMappingURL=style.css.map */

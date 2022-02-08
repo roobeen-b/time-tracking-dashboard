@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@100;200&family=Lexend+Deca&family=Luxurious+Roman&family=Open+Sans&family=Raleway:wght@400;700&family=Rubik:wght@300;400;500&display=swap");
+
+$bg-blue: hsl(246, 80%, 60%);
+$bg-orange: hsl(15, 100%, 70%);
+$bg-softBlue: hsl(195, 74%, 62%);
+$bg-lightRed: hsl(348, 100%, 68%);
+$bg-limeGreen: hsl(145, 58%, 55%);
+$bg-violet: hsl(264, 64%, 52%);
+$bg-softOrange: hsl(43, 84%, 65%);
+
+$very-dark-blue: hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  color: white;
+}
+
+.wrapper {
+  background-color: $very-dark-blue;
+  padding: 80px 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.main {
+  background-color: $dark-blue;
+  border-radius: 20px;
+  padding: 0;
+
+  .personal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: $bg-blue;
+    border-radius: 20px;
+    padding: 40px 20px;
+
+    h3 {
+      font-weight: 100;
+      color: whitesmoke;
+    }
+
+    h2 {
+      font-weight: 100;
+    }
+
+    img {
+      width: 20%;
+      border: 3px solid white;
+      border-radius: 50%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: $desaturated-blue;
+    }
+  }
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    background-repeat: no-repeat;
+    width: 80px;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    right: 20px;
+  }
+
+  .inner-card {
+    background-color: $dark-blue;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 30px;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .activity {
+        font-size: 1.2rem;
+      }
+
+      .time {
+        font-size: 2rem;
+        font-weight: 100;
+      }
+    }
+
+    .right {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: end;
+      color: $desaturated-blue;
+
+      img {
+        width: 20px;
+        position: static;
+      }
+    }
+  }
+}
+
+.work {
+  background-color: $bg-orange;
+}
+
+.play {
+  background-color: $bg-softBlue;
+}
+
+.study {
+  background-color: $bg-lightRed;
+}
+
+.exercise {
+  background-color: $bg-limeGreen;
+}
+
+.social {
+  background-color: $bg-violet;
+}
+
+.self-care {
+  background-color: $bg-softOrange;
+}
