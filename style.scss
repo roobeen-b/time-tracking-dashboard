@@ -183,9 +183,8 @@ body {
 
     .personal {
       flex-direction: column;
-      text-align: left;
-      justify-content: left;
-      padding: 40px 0;
+      align-items: initial;
+      padding: 40px 30px;
 
       h3 {
         font-size: 0.8rem;
@@ -202,6 +201,7 @@ body {
     ul {
       flex-direction: column;
       gap: 20px;
+      padding: 40px 30px;
     }
   }
 
