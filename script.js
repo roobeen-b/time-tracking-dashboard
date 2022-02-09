@@ -18,6 +18,8 @@ const socialLast = document.getElementById("social-last");
 const selfTime = document.getElementById("self-time");
 const selfLast = document.getElementById("self-last");
 
+window.onload = weekly;
+
 times[0].addEventListener("click", daily);
 times[1].addEventListener("click", weekly);
 times[2].addEventListener("click", monthly);
